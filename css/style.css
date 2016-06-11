@@ -1,0 +1,35 @@
+nav.nav{
+
+    height:50px;
+    width: 100%;
+    background-color: whitesmoke;
+    position: absolute;
+    z-index: 10;
+}
+
+div#map_container{
+
+    height:100%;
+    width:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:  1;
+    background-color: red;
+    padding:50px 0 50px 0 ;
+}
+div#map_container div#map{
+
+    height:100%;
+    width:100%;
+    background-color: rgba(100,100,100,0.3);
+}
+
+div#Suchleiste{
+
+    height:50px;
+    width: 100%;
+    background-color: yellow;
+    position: absolute;
+
+}
