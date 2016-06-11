@@ -1,20 +1,16 @@
-nav.nav{
+nav.navbar{
 
-    height:50px;
-    width: 100%;
-    background-color: whitesmoke;
-    position: absolute;
-    z-index: 10;
+z-index: 99;
 }
 
 div#map_container{
 
     height:100%;
     width:100%;
-    position: absolute;
     top:0;
     left:0;
     z-index:  1;
+    position: fixed;
     background-color: red;
     padding:50px 0 50px 0 ;
 }
@@ -25,11 +21,33 @@ div#map_container div#map{
     background-color: rgba(100,100,100,0.3);
 }
 
+div#location_container{
+
+    height:100%;
+    width:100%;
+    padding-top:50px;
+    position: fixed;
+    z-index:14;
+    left:100%;
+}
+
+div#location_container div#location{
+
+    height:100%;
+    width:100%;
+    background: #ddd;
+    z-index: 14;
+    padding:20%;
+    font-size: 25px;
+}
+
 div#Suchleiste{
 
     height:50px;
     width: 100%;
+    bottom:0;
     background-color: yellow;
-    position: absolute;
+    position: fixed;
+    z-index: 12;
 
 }

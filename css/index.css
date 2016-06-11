@@ -41,7 +41,8 @@ body {
     height:100%;
     margin:0px;
     padding:0px;
-    text-transform:uppercase;
+    /* HIER */
+    /*text-transform:uppercase;*/
     width:100%;
 }
 
