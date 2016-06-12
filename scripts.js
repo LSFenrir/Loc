@@ -5,13 +5,13 @@ var v_postcode = ["PLZ 1 Ort 1", "PLZ 2 Ort 2", "PLZ 3 Ort 3", "PLZ 4 Ort 4", "P
 
 function init() {
 
-    $.event.special.swipe.scrollSupressionThreshold = 10; // More than this horizontal displacement, and we will suppress scrolling.
-    $.event.special.swipe.horizontalDistanceThreshold = 30; // Swipe horizontal displacement must be more than this.
-    $.event.special.swipe.durationThreshold = 500;  // More time than this, and it isn't a swipe.
-    $.event.special.swipe.verticalDistanceThreshold = 75; // Swipe vertical displacement must be less than this.
+    //*$.event.special.swipe.scrollSupressionThreshold = 10; // More than this horizontal displacement, and we will suppress scrolling.
+    //$.event.special.swipe.horizontalDistanceThreshold = 30; // Swipe horizontal displacement must be more than this.
+    //$.event.special.swipe.durationThreshold = 500;  // More time than this, and it isn't a swipe.
+    //$.event.special.swipe.verticalDistanceThreshold = 75; // Swipe vertical displacement must be less than this.
 
-    $("body").on("swiperight", swiperighthandler);
-    $("body").on("swipeleft", swipelefthandler);
+    //$("body").on("swiperight", swiperighthandler);
+    //$("body").on("swipeleft", swipelefthandler);
 
 
 }
@@ -22,15 +22,13 @@ function initMap() {
     var mapDiv = document.getElementById('map');
     map = new google.maps.Map(mapDiv, {
         center: {lat: 49.122631, lng: 9.206131},
-        zoom: 24,
+        zoom: 17,
         tilt: 0,
         zoomControl: false,
         mapTypeControl: false,
         scaleControl: false,
         streetViewControl: false,
-        rotateControl: false,
-        mapTypeId: google.maps.MapTypeId.SATELLITE
-
+        rotateControl: false
     });
 }
 
